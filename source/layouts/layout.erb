@@ -10,8 +10,32 @@
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/favicon.png' %>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
+    <div class="navbar-wagon">
+      <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+        <%= link_to "Accueil", "index.html", class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "Nos Chambres", "rooms.html", class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "A Proximité", "index.html", class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "Tarifs", "index.html", class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "Contact", "index.html", class: "navbar-wagon-item navbar-wagon-link" %>
+      </div>
+      <!-- Dropdown appearing on mobile only -->
+      <div class="navbar-wagon-item hidden-md hidden-lg burger">
+        <div class="dropdown">
+          <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li><%= link_to "Accueil", "index.html"%></li>
+            <li><%= link_to "Nos Chambres", "rooms.html"%></li>
+            <li><%= link_to "A Proximité", "index.html"%></li>
+            <li><%= link_to "Tarifs", "index.html"%></li>
+            <li><%= link_to "Contact", "index.html"%></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
