@@ -25,7 +25,10 @@
   color: #D23333;
 }
 
-.footer-copyright a {
+.footer-copyright {
+  font-size: 13px;
+  a {
   color: rgba(0,0,0,.4);
   font-weight: lighter;
+  }
 }

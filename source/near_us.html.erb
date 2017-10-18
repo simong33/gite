@@ -1,0 +1,49 @@
+---
+title: A Proximité
+---
+<div class="container">
+  <div id="map"></div>
+  <h2>A Proximité</h2>
+
+  <p>Les suggestions de la maison dans un environnement proche :</p>
+  <ul>
+    <li>Bergerac (8km)</li>
+    <li>Monbazillac : château et vignoble (8km)</li>
+    <li>Issigeac (15km)</li>
+    <li>Château Lanquais</li>
+    <li>Vignoble de Pécharmant</li>
+    <li>Bastide de Monpazier</li>
+    <li>Bastide d’Eymet</li>
+    <li>Bastide de Beaumont</li>
+    <li>Abbaye de Cadouin</li>
+    <li>Château de Puymartin</li>
+    <li>Château de Bridoire</li>
+    <li>Tour de Montaigne</li>
+    <li>Canoë Kayak</li>
+    <li>Accrobranche</li>
+    <li>Promenades en gabarres</li>
+    <li>Nombreux festivals musicaux l’été</li>
+    <li>Aquarium du Bugue</li>
+    <li>Musée Napoléon</li>
+    <li>Musée du Tabac</li>
+    <li>Music-Hall</li>
+    <li>Pêche</li>
+    <li>Proche de nombreux restaurants</li>
+  </ul>
+</div>
+<script>
+  function initMap() {
+    var uluru = {lat: 44.8545, lng: 0.5950};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1LjvPLrssF03bouD1FLtszpZ68tuFGO4&callback=initMap">
+</script>
