@@ -10,7 +10,7 @@
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/favicon.png' %>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
   </head>
   <body>
     <div class="navbar-wagon">
@@ -37,5 +37,14 @@
       </div>
     </div>
     <%= yield %>
+    <div class="footer">
+      <div class="footer-links">
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+      </div>
+      <div class="footer-copyright">
+        <a href="http://simonguillor.it/">Réalisation Simon GUILLORIT</a>
+      </div>
+    </div>
   </body>
 </html>
